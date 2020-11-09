@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>INVITACION FIESTA DE HALLOWEEN</title>
+        <link rel="stylesheet" href="estilos/letrahalloween.css">
+        <script src="javascripts/letrahalloween.js"></script>
+    </head>
+    <body onload="sonar('nana')">
+        <div id="container">
+            <audio id="nana"controls src="sonido/nana.mp3"></audio>
+            <audio id="grito" src="sonido/grito.mp3"></audio>
+            <audio src="fantasma" src="sonidos/fantasma.mp3"></audio>
+            <p id="titulo">INVITACION FIESTA DE HALLOWEEN</p>
+            <p id="advertencia">Ni se te ocurra tocarla</p>
+            <audio src="fantasma" src="sonidos/fantasma.mp3"></audio>
+            <div id="calabaza" onmouseover="mostrar('fantasma');sonar('fantasma')"
+            onmouseout="ocultar('fantasma'); parar('fantasma')"></div>
+            <div id="mano" onclick=""></div>
+            <img id="columpio" src="imagenes/columpio.gif" width="180"
+            onclick="ocultar('columpio'); parar('grito')"></div>
+        </div>
+    </body>
+</html>
